@@ -50,18 +50,6 @@ window.onclick = function (event) {
     log.style.display = "none";
     history.back();
   }
-  if (event.target == cmodal) {
-    cmodal.style.display = "none";
-  }
-  if (event.target == cpmodal) {
-    cpmodal.style.display = "none";
-  }
-  if (event.target == mernmodal) {
-    mernmodal.style.display = "none";
-  }
-  if (event.target == dsamodal) {
-    dsamodal.style.display = "none";
-  }
 };
 
 function detectHistory() {
@@ -251,15 +239,21 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-var read = document.getElementById("read");
-read.addEventListener("click", function () {
-  this.style.display = "none";
-  var content = this.nextElementSibling;
-  if (content.style.maxHeight) {
-    content.style.maxHeight = null;
-    content.style.padding = "0";
-  } else {
-    content.style.padding = "0rem 2rem 2rem";
-    content.style.maxHeight = content.scrollHeight + "rem";
-  }
-});
+// var intinner = document.getElementById("intinner");
+// var scrollable = intinner.scrollWidth;
+
+// $("div#intinner").scroll(function () {
+//   didScroll = true;
+//   alert();
+// });
+// alert(scrollable);
+// intinner.scroll = function () {
+//   myFunction();
+// };
+
+// function myFunction() {
+//   alert("entered");
+//   if (document.documentElement.scrollLeft > 10) {
+//     alert(scrollable);
+//   }
+// }
