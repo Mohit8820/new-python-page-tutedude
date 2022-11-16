@@ -826,7 +826,7 @@ h1.gradText {
 #intframe2:checked ~ #intcontrols label:nth-child(3)::after,
 #intframe3:checked ~ #intcontrols label:nth-child(4)::after,
 #intframe4:checked ~ #intcontrols label:nth-child(1)::after {
-  content: "\01F862";
+  content: "\1F862";
   font-size: 2rem;
   color: #800080;
   position: absolute;
@@ -852,7 +852,7 @@ h1.gradText {
 #intframe2:checked ~ #intcontrols label:nth-last-child(4)::after,
 #intframe3:checked ~ #intcontrols label:nth-last-child(3)::after,
 #intframe4:checked ~ #intcontrols label:nth-last-child(2)::after {
-  content: "\01F860";
+  content: "\1F860";
   font-size: 2rem;
   color: #800080;
   position: absolute;
@@ -1843,7 +1843,7 @@ footer a {
     font-size: 3.2rem;
     line-height: 4.8rem;
   }
-  .m-enroll .apply-now {
+  .apply-now {
     width: 100%;
     margin: 2rem auto 6.7rem;
     width: 87%;
@@ -1869,10 +1869,10 @@ footer a {
     width: 87%;
   }
   #intframe {
-    width: 35rem;
+    width: 38rem;
   }
   #intframe::after {
-    content: "\01F860 swipe";
+    content: "\1F860 swipe";
     position: absolute;
     bottom: 5rem;
     right: 2rem;
@@ -1883,9 +1883,9 @@ footer a {
   }
   .fake-bullets {
     display: block;
-    width: 17.5rem;
+    width: 20.5rem;
     position: absolute;
-    bottom: 0rem;
+    bottom: -0.1rem;
     left: 50%;
     transform: translate(-50%);
     z-index: 1;
