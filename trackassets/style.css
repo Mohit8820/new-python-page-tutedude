@@ -1886,7 +1886,7 @@ footer a {
     width: 38rem;
   }
   #intframe::after {
-    content: "🡠 swipe";
+    content: "\27F5 swipe";
     position: absolute;
     bottom: 5rem;
     right: 2rem;
