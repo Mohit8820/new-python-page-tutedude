@@ -239,6 +239,36 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+/**
+ * skills slider
+ */
+new Swiper(".skills-slider", {
+  speed: 1000,
+
+  // autoplay: {
+  //   delay: 0,
+  //   disableOnInteraction: false,
+  // },
+  slidesPerView: "auto",
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
+  },
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    120: {
+      spaceBetween: 20,
+    },
+  },
+  loop: true,
+});
+
 // var intinner = document.getElementById("intinner");
 // var scrollable = intinner.scrollWidth;
 
@@ -257,3 +287,14 @@ for (i = 0; i < coll.length; i++) {
 //     alert(scrollable);
 //   }
 // }
+
+var sleft = document.querySelector(".swiper-button-next");
+var leftbtn = document.querySelector(".left-btn");
+leftbtn.addEventListener("click", () => {
+  sright.click();
+});
+var sright = document.querySelector(".swiper-button-prev");
+var rightbtn = document.querySelector(".right-btn");
+rightbtn.addEventListener("click", () => {
+  sleft.click();
+});

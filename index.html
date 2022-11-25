@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+    <link
       href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap"
       rel="stylesheet"
     />
@@ -41,7 +45,7 @@
     </a> -->
     
       <header class="disFlex">
-        <img class="logo" src="trackassets/Tutedude.png" alt="logo" />
+        <img class="logo-main logo" src="trackassets/Tutedude.png" alt="logo" />
         <nav class="disFlex gradText">
           <a href="">explore programs</a>
           <a href="">offers</a>
@@ -337,7 +341,7 @@
             >
               <style type="text/css">
                 .menu {
-                  stroke: url(#MyGradient);
+                  stroke: var(--accent-color);
                 }
               </style>
               <defs>
@@ -369,30 +373,20 @@
         <div><div class="alumni">
           An IIT Delhi Alumni Initiative
         </div>
-        <h1>Learn <span>Python</span>,<br /> 
-          get certified to write effective codes
-          & more 
+        <h1>Learn <span>Python</span>,<br /> effectively for <span>FREE</span> 
+          <p>By getting 100% of your fees back on course completion</p>
         </h1>
-
-
-        
-        <form action="fullstackdevelopment.php" id="hide-karde" method="post"><button type="submit" name="submit" class="apply-now">
-          Enroll Now
-      </button></form>
       </div>
         <div class="int-path">
           <span>Enroll</span><p>&#8595;</p><span>Upskill</span><p>&#8595;</p><span>100% FeesBack</span>
         </div>
       </section>
       
-    <div class="introdu">
-      Includes Projects, Assignments, Learning Experience like getting trained as of Industry Standards, at your own time</div>
 
-
-      <div class="mview m-enroll">
+      <div class="m-enroll">
 
        <p> <span>₹ 699 </span>Pay now & get it back on course
-        completion</p>
+        <br />completion</p>
 
         <form action="fullstackdevelopment.php" id="hide-karde" method="post"><button type="submit" name="submit" class="apply-now">
           Enroll Now
@@ -620,129 +614,121 @@
             <p>only few seats left</p>
           </section>
 
-          <section class="int">
-            <div id="intframe">
-              <input type="radio" name="intframe" id="intframe1" checked />
-              <input type="radio" name="intframe" id="intframe2" />
-              <input type="radio" name="intframe" id="intframe3" />
-              <input type="radio" name="intframe" id="intframe4" />
-              <div id="intslides">
-                  <div class="intinner" id="intinner">
-                    <div class="intframe intframe_1">
-                        <div class="questions">
-                          <h3>What is FeesBack ?</h3>
-                          <p>A limited time opportunity for rewarding our learners to upskill for free.</p>
-                          <ul>
-                            <li>UPSKILL<div>&check;</div></li>
-                            <li>1 to 1  MENTORING<div>&check;</div></li>
-                            <li>CERTIFICATION<div>&check;</div></li>
-                            <li>EFFECTIVE FEE<div style="background:#800080 ;color:white">0</div></li>
-                          </ul>
-                          <strong>“ Now  you can learn from Tutedude
-                            Effectively for FREE ”</strong>
-                        </div>
+          <div class="slider-container">
+            <div class="right-btn">🡢</div>
+            <div class="left-btn">🡠</div>
+            <!-- Slider main container -->
+            <div class="swiper skills-slider">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="questions">
+                    <h3>What is FeesBack ?</h3>
+                    <p>A limited time opportunity for rewarding our learners to upskill for free.</p>
+                    <ul>
+                      <li>UPSKILL<div>&check;</div></li>
+                      <li>1 to 1  MENTORING<div>&check;</div></li>
+                      <li>CERTIFICATION<div>&check;</div></li>
+                      <li>EFFECTIVE FEE<div style="background:#800080 ;color:white">0</div></li>
+                    </ul>
+                    <strong>“ Now  you can learn from Tutedude
+                      Effectively for FREE ”</strong>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="questions">
+                    <h3>How does FeesBack work ?</h3>
+                    <div class="question-flex">
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
+<path d="M8.75 39.7498C8.75 40.7915 9.58334 41.8332 10.8333 41.8332H19.1667C20.4167 41.8332 21.25 40.7915 21.25 39.7498V37.6665H8.75V39.7498ZM15 0.166504C6.875 0.166504 0.416672 6.62484 0.416672 14.7498C0.416672 19.7498 2.91667 24.1248 6.66667 26.6248V31.4165C6.66667 32.4582 7.5 33.4998 8.75 33.4998H21.25C22.5 33.4998 23.3333 32.4582 23.3333 31.4165V26.6248C27.0833 23.9165 29.5833 19.5415 29.5833 14.7498C29.5833 6.62484 23.125 0.166504 15 0.166504Z" fill="#800080"/>
+</svg><p>learn</p>
+                      </div>
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
+<path d="M8.75 39.7498C8.75 40.7915 9.58334 41.8332 10.8333 41.8332H19.1667C20.4167 41.8332 21.25 40.7915 21.25 39.7498V37.6665H8.75V39.7498ZM15 0.166504C6.875 0.166504 0.416672 6.62484 0.416672 14.7498C0.416672 19.7498 2.91667 24.1248 6.66667 26.6248V31.4165C6.66667 32.4582 7.5 33.4998 8.75 33.4998H21.25C22.5 33.4998 23.3333 32.4582 23.3333 31.4165V26.6248C27.0833 23.9165 29.5833 19.5415 29.5833 14.7498C29.5833 6.62484 23.125 0.166504 15 0.166504Z" fill="#800080"/>
+</svg><p>learn</p>
+                      </div>
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
+<path d="M8.75 39.7498C8.75 40.7915 9.58334 41.8332 10.8333 41.8332H19.1667C20.4167 41.8332 21.25 40.7915 21.25 39.7498V37.6665H8.75V39.7498ZM15 0.166504C6.875 0.166504 0.416672 6.62484 0.416672 14.7498C0.416672 19.7498 2.91667 24.1248 6.66667 26.6248V31.4165C6.66667 32.4582 7.5 33.4998 8.75 33.4998H21.25C22.5 33.4998 23.3333 32.4582 23.3333 31.4165V26.6248C27.0833 23.9165 29.5833 19.5415 29.5833 14.7498C29.5833 6.62484 23.125 0.166504 15 0.166504Z" fill="#800080"/>
+</svg><p>learn</p>
+                      </div>
                     </div>
-                    <div class="intframe intframe_2">
-                        <div class="questions">
-                          <h3>How does FeesBack work ?</h3>
-                          <div class="question-flex">
-                            <div>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
+                    <p><strong>Enroll into your favourite TuteDude’s 
+                      upskilling courses.</strong> Learn by 
+                      doing interesting curated assignments
+                       and projects shared by your mentors 
+                       from time to time you cover the topics.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="questions">
+                    <h3>How does FeesBack work ?</h3>
+                    <div class="question-flex">
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
 <path d="M8.75 39.7498C8.75 40.7915 9.58334 41.8332 10.8333 41.8332H19.1667C20.4167 41.8332 21.25 40.7915 21.25 39.7498V37.6665H8.75V39.7498ZM15 0.166504C6.875 0.166504 0.416672 6.62484 0.416672 14.7498C0.416672 19.7498 2.91667 24.1248 6.66667 26.6248V31.4165C6.66667 32.4582 7.5 33.4998 8.75 33.4998H21.25C22.5 33.4998 23.3333 32.4582 23.3333 31.4165V26.6248C27.0833 23.9165 29.5833 19.5415 29.5833 14.7498C29.5833 6.62484 23.125 0.166504 15 0.166504Z" fill="#800080"/>
 </svg><p>learn</p>
-                            </div>
-                            <div>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
+                      </div>
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
 <path d="M8.75 39.7498C8.75 40.7915 9.58334 41.8332 10.8333 41.8332H19.1667C20.4167 41.8332 21.25 40.7915 21.25 39.7498V37.6665H8.75V39.7498ZM15 0.166504C6.875 0.166504 0.416672 6.62484 0.416672 14.7498C0.416672 19.7498 2.91667 24.1248 6.66667 26.6248V31.4165C6.66667 32.4582 7.5 33.4998 8.75 33.4998H21.25C22.5 33.4998 23.3333 32.4582 23.3333 31.4165V26.6248C27.0833 23.9165 29.5833 19.5415 29.5833 14.7498C29.5833 6.62484 23.125 0.166504 15 0.166504Z" fill="#800080"/>
 </svg><p>learn</p>
-                            </div>
-                            <div>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
+                      </div>
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
 <path d="M8.75 39.7498C8.75 40.7915 9.58334 41.8332 10.8333 41.8332H19.1667C20.4167 41.8332 21.25 40.7915 21.25 39.7498V37.6665H8.75V39.7498ZM15 0.166504C6.875 0.166504 0.416672 6.62484 0.416672 14.7498C0.416672 19.7498 2.91667 24.1248 6.66667 26.6248V31.4165C6.66667 32.4582 7.5 33.4998 8.75 33.4998H21.25C22.5 33.4998 23.3333 32.4582 23.3333 31.4165V26.6248C27.0833 23.9165 29.5833 19.5415 29.5833 14.7498C29.5833 6.62484 23.125 0.166504 15 0.166504Z" fill="#800080"/>
 </svg><p>learn</p>
-                            </div>
-                          </div>
-                          <p><strong>Enroll into your favourite TuteDude’s 
-                            upskilling courses.</strong> Learn by 
-                            doing interesting curated assignments
-                             and projects shared by your mentors 
-                             from time to time you cover the topics.</p>
-                        </div>
+                      </div>
                     </div>
-                    <div class="intframe intframe_3">
-                      <div class="questions">
-                        <h3>How does FeesBack work ?</h3>
-                        <div class="question-flex">
-                          <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
+                    <p><strong>Enroll into your favourite TuteDude’s 
+                      upskilling courses.</strong> Learn by 
+                      doing interesting curated assignments
+                       and projects shared by your mentors 
+                       from time to time you cover the topics.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="questions">
+                    <h3>How does FeesBack work ?</h3>
+                    <div class="question-flex">
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
 <path d="M8.75 39.7498C8.75 40.7915 9.58334 41.8332 10.8333 41.8332H19.1667C20.4167 41.8332 21.25 40.7915 21.25 39.7498V37.6665H8.75V39.7498ZM15 0.166504C6.875 0.166504 0.416672 6.62484 0.416672 14.7498C0.416672 19.7498 2.91667 24.1248 6.66667 26.6248V31.4165C6.66667 32.4582 7.5 33.4998 8.75 33.4998H21.25C22.5 33.4998 23.3333 32.4582 23.3333 31.4165V26.6248C27.0833 23.9165 29.5833 19.5415 29.5833 14.7498C29.5833 6.62484 23.125 0.166504 15 0.166504Z" fill="#800080"/>
 </svg><p>learn</p>
-                          </div>
-                          <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
+                      </div>
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
 <path d="M8.75 39.7498C8.75 40.7915 9.58334 41.8332 10.8333 41.8332H19.1667C20.4167 41.8332 21.25 40.7915 21.25 39.7498V37.6665H8.75V39.7498ZM15 0.166504C6.875 0.166504 0.416672 6.62484 0.416672 14.7498C0.416672 19.7498 2.91667 24.1248 6.66667 26.6248V31.4165C6.66667 32.4582 7.5 33.4998 8.75 33.4998H21.25C22.5 33.4998 23.3333 32.4582 23.3333 31.4165V26.6248C27.0833 23.9165 29.5833 19.5415 29.5833 14.7498C29.5833 6.62484 23.125 0.166504 15 0.166504Z" fill="#800080"/>
 </svg><p>learn</p>
-                          </div>
-                          <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
+                      </div>
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
 <path d="M8.75 39.7498C8.75 40.7915 9.58334 41.8332 10.8333 41.8332H19.1667C20.4167 41.8332 21.25 40.7915 21.25 39.7498V37.6665H8.75V39.7498ZM15 0.166504C6.875 0.166504 0.416672 6.62484 0.416672 14.7498C0.416672 19.7498 2.91667 24.1248 6.66667 26.6248V31.4165C6.66667 32.4582 7.5 33.4998 8.75 33.4998H21.25C22.5 33.4998 23.3333 32.4582 23.3333 31.4165V26.6248C27.0833 23.9165 29.5833 19.5415 29.5833 14.7498C29.5833 6.62484 23.125 0.166504 15 0.166504Z" fill="#800080"/>
 </svg><p>learn</p>
-                          </div>
-                        </div>
-                        <p><strong>Enroll into your favourite TuteDude’s 
-                          upskilling courses.</strong> Learn by 
-                          doing interesting curated assignments
-                           and projects shared by your mentors 
-                           from time to time you cover the topics.</p>
-                      </div>                    </div>
-                    <div class="intframe intframe_4">
-                      <div class="questions">
-                        <h3>How does FeesBack work ?</h3>
-                        <div class="question-flex">
-                          <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
-<path d="M8.75 39.7498C8.75 40.7915 9.58334 41.8332 10.8333 41.8332H19.1667C20.4167 41.8332 21.25 40.7915 21.25 39.7498V37.6665H8.75V39.7498ZM15 0.166504C6.875 0.166504 0.416672 6.62484 0.416672 14.7498C0.416672 19.7498 2.91667 24.1248 6.66667 26.6248V31.4165C6.66667 32.4582 7.5 33.4998 8.75 33.4998H21.25C22.5 33.4998 23.3333 32.4582 23.3333 31.4165V26.6248C27.0833 23.9165 29.5833 19.5415 29.5833 14.7498C29.5833 6.62484 23.125 0.166504 15 0.166504Z" fill="#800080"/>
-</svg><p>learn</p>
-                          </div>
-                          <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
-<path d="M8.75 39.7498C8.75 40.7915 9.58334 41.8332 10.8333 41.8332H19.1667C20.4167 41.8332 21.25 40.7915 21.25 39.7498V37.6665H8.75V39.7498ZM15 0.166504C6.875 0.166504 0.416672 6.62484 0.416672 14.7498C0.416672 19.7498 2.91667 24.1248 6.66667 26.6248V31.4165C6.66667 32.4582 7.5 33.4998 8.75 33.4998H21.25C22.5 33.4998 23.3333 32.4582 23.3333 31.4165V26.6248C27.0833 23.9165 29.5833 19.5415 29.5833 14.7498C29.5833 6.62484 23.125 0.166504 15 0.166504Z" fill="#800080"/>
-</svg><p>learn</p>
-                          </div>
-                          <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" fill="none">
-<path d="M8.75 39.7498C8.75 40.7915 9.58334 41.8332 10.8333 41.8332H19.1667C20.4167 41.8332 21.25 40.7915 21.25 39.7498V37.6665H8.75V39.7498ZM15 0.166504C6.875 0.166504 0.416672 6.62484 0.416672 14.7498C0.416672 19.7498 2.91667 24.1248 6.66667 26.6248V31.4165C6.66667 32.4582 7.5 33.4998 8.75 33.4998H21.25C22.5 33.4998 23.3333 32.4582 23.3333 31.4165V26.6248C27.0833 23.9165 29.5833 19.5415 29.5833 14.7498C29.5833 6.62484 23.125 0.166504 15 0.166504Z" fill="#800080"/>
-</svg><p>learn</p>
-                          </div>
-                        </div>
-                        <p><strong>Enroll into your favourite TuteDude’s 
-                          upskilling courses.</strong> Learn by 
-                          doing interesting curated assignments
-                           and projects shared by your mentors 
-                           from time to time you cover the topics.</p>
-                      </div>                    </div>
+                      </div>
+                    </div>
+                    <p><strong>Enroll into your favourite TuteDude’s 
+                      upskilling courses.</strong> Learn by 
+                      doing interesting curated assignments
+                       and projects shared by your mentors 
+                       from time to time you cover the topics.</p>
+                  </div>
                 </div>
               </div>
-              <div id="intcontrols">
-                <label for="intframe1"></label>
-                <label for="intframe2"></label>
-                <label for="intframe3"></label>
-                <label for="intframe4"></label>
-              </div>
-              <div id="intbullets">
-                <label for="intframe1"></label>
-                <label for="intframe2"></label>
-                <label for="intframe3"></label>
-                <label for="intframe4"></label>
-              </div>
-              <div class="fake-bullets">
-                <img src="./trackassets//bullets (1).png" alt="">
-              </div>
-            </div>
-            <form action="fullstackdevelopment.php" id="hide-karde" method="post"><button type="submit" name="submit" class="apply-now">
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+            </div> <form action="fullstackdevelopment.php" id="hide-karde" method="post"><button type="submit" name="submit" class="apply-now">
               Enroll Now
           </button></form>
-          </section>
+          </div>
+
+          
 
         <section class="support">
           <h1 class="gradText">Instant Doubt Support</h1>
@@ -1020,32 +1006,28 @@
 
 
         <section class="other-courses-sec">
-          <h1 class="gradText">Interested in our<br/> other Courses too?</h1>
+          <h1 class="gradText">Interested in our other Courses too?</h1>
           <div class="other-courses disFlex">
             <div class="other-courses-card first">
               <h3>Customized Pack</h3>
               <div class="course-price">
                 <span class="big">4</span>
-                <div>
-                  <span>courses <span style="font-size: 1.8rem;">@</span></span>
-                  <p>&#8377;1,499/-</p>
-                </div>
-                <div class="cancel">₹2,796</div>
-                <div class="strike"></div>
-              </div>
+                <p>courses @ &#8377;1,499/-</p>
+               </div>
+               <div class="feesBack-offer">FEESBACK OFFER valid for 1 year </div>
+               <div class="save">save ₹ 1,287/-</div>
+              
               <a href=""><button class="btn-course">Know More</button></a>
             </div>
             <div class="other-courses-card second">
               <h3>All Access Pack</h3>
               <div class="course-price">
                 <span class="big">23</span>
-                <div>
-                  <span>courses <span style="font-size: 1.8rem;">@</span></span>
-                  <p>&#8377;4,499/-</p>
-                </div>
-                <div class="cancel">₹16,077</div>
-                <div class="strike"></div>
+                <p>courses @ &#8377;4,499/-</p>
               </div>
+                <div class="feesBack-offer">FEESBACK OFFER valid for 1 year </div>
+                <div class="save">save ₹ 1,287/-</div>
+              
               <a href=""><button class="btn-course">Know More</button></a>
             </div>
           </div>
@@ -1507,6 +1489,7 @@ Krishanth M
           </div>
         </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <script
       type="module"
