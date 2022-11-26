@@ -621,7 +621,9 @@ h1.gradText {
   display: flex;
   flex-direction: column;
 }
-
+.special-highlights svg {
+  width: 2rem;
+}
 /***************************************/
 
 /***************************************/
@@ -713,14 +715,14 @@ h1.gradText {
   padding: 2rem;
   font-weight: 400;
   font-size: 1.4rem;
-  line-height: 2.4rem;
+  line-height: 2.1rem;
   color: #000000;
   text-align: justify;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  gap: 2rem;
   margin-bottom: 2.4rem;
+  gap: 1.5rem;
 }
 .questions h3 {
   font-weight: 600;
@@ -752,8 +754,14 @@ h1.gradText {
   font-weight: 400;
   font-size: 1.6rem;
   text-align: center;
-  margin-top: 1.5rem;
   color: #800080;
+}
+.question-flex svg {
+  height: 5rem;
+}
+.question-flex p {
+  width: 8.5rem;
+  height: 8rem;
 }
 .int .apply-now {
   margin-top: 3rem;
@@ -818,7 +826,7 @@ h1.gradText {
   font-size: 2rem;
   color: #800080;
   position: absolute;
-  top: 30%;
+  top: 25%;
   right: -6rem;
   display: flex;
   align-items: center;
@@ -833,7 +841,7 @@ h1.gradText {
   font-size: 2rem;
   color: #800080;
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: -6rem;
   display: flex;
   align-items: center;
@@ -1733,7 +1741,7 @@ footer a {
   .questions::after {
     content: "\27F5 swipe";
     position: absolute;
-    bottom: 2rem;
+    bottom: 1.5rem;
     right: 2rem;
     font-size: 1.6rem;
     font-weight: 600;
