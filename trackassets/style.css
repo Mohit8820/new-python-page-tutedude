@@ -1883,6 +1883,7 @@ footer a {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     padding: 4rem;
+    padding-bottom: 7rem;
   }
   footer h2 {
     font-weight: 500;
@@ -1943,7 +1944,7 @@ footer a {
     width: 87%;
   }
   .premain h1 {
-    font-size: 4.5rem;
+    font-size: 4.8rem;
     font-weight: 700;
     width: 100%;
     margin-top: 4.4rem;
