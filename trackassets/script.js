@@ -57,140 +57,6 @@ function detectHistory() {
   log.style.display = "none";
 }
 
-// var li = document.getElementById("ulist").getElementsByTagName("li");
-// var after = document.getElementById("ulist").getElementsByClassName("after");
-
-// var x = -1;
-
-// for (var i = 0; i < 5; i++) {
-//   console.log(i);
-//   li[i].addEventListener("click", function () {
-//     var value = this.innerHTML;
-//     console.log(this.classList);
-
-//     this.classList.add("act");
-//     console.log(value);
-//     if (
-//       value ==
-//       "Learn from our structured pre recorded courses made by experts to meet industry needs"
-//     ) {
-//       var val = 1;
-//     }
-//     if (
-//       value ==
-//       "1:1 live doubt solving support available throughout the day to clear your doubts instantly "
-//     ) {
-//       var val = 2;
-//     }
-//     if (
-//       value ==
-//       "Personal mentors to guide and help you throughout your journey as a friend"
-//     ) {
-//       var val = 3;
-//     }
-//     if (value == "Build major projects which makes your resume stand apart") {
-//       var val = 4;
-//     }
-//     if (
-//       value ==
-//       "Get guaranteed paid internships after completion of the program along with course completion certificates"
-//     ) {
-//       var val = 5;
-//     }
-//     change(val);
-//   });
-// }
-
-// function change(val) {
-//   console.log(val);
-//   switch (val) {
-//     case 1:
-//       li[0].classList.add("act");
-//       li[1].classList.remove("act");
-//       li[2].classList.remove("act");
-//       li[3].classList.remove("act");
-//       li[4].classList.remove("act");
-//       after[0].classList.add("after-act");
-//       after[1].classList.remove("after-act");
-//       after[2].classList.remove("after-act");
-//       after[3].classList.remove("after-act");
-//       after[4].classList.remove("after-act");
-//       x = -1;
-//       break;
-//     case 2:
-//       li[0].classList.remove("act");
-//       li[1].classList.add("act");
-//       li[2].classList.remove("act");
-//       li[3].classList.remove("act");
-//       li[4].classList.remove("act");
-//       after[0].classList.remove("after-act");
-//       after[1].classList.add("after-act");
-//       after[2].classList.remove("after-act");
-//       after[3].classList.remove("after-act");
-//       after[4].classList.remove("after-act");
-//       x = 0;
-//       break;
-//     case 3:
-//       li[0].classList.remove("act");
-//       li[1].classList.remove("act");
-//       li[2].classList.add("act");
-//       li[3].classList.remove("act");
-//       li[4].classList.remove("act");
-//       after[0].classList.remove("after-act");
-//       after[1].classList.remove("after-act");
-//       after[2].classList.add("after-act");
-//       after[3].classList.remove("after-act");
-//       after[4].classList.remove("after-act");
-//       x = 1;
-//       break;
-//     case 4:
-//       li[0].classList.remove("act");
-//       li[1].classList.remove("act");
-//       li[2].classList.remove("act");
-//       li[3].classList.add("act");
-//       li[4].classList.remove("act");
-//       after[0].classList.remove("after-act");
-//       after[1].classList.remove("after-act");
-//       after[2].classList.remove("after-act");
-//       after[3].classList.add("after-act");
-//       after[4].classList.remove("after-act");
-//       x = 2;
-//       break;
-//     case 5:
-//       li[0].classList.remove("act");
-//       li[1].classList.remove("act");
-//       li[2].classList.remove("act");
-//       li[3].classList.remove("act");
-//       li[4].classList.add("act");
-//       after[0].classList.remove("after-act");
-//       after[1].classList.remove("after-act");
-//       after[2].classList.remove("after-act");
-//       after[3].classList.remove("after-act");
-//       after[4].classList.add("after-act");
-
-//       x = 3;
-//       break;
-//   }
-// }
-// function startTimer() {
-//   setInterval(displayNextImage, 2000);
-// }
-// function displayNextImage() {
-//   x = x === 4 ? 0 : x + 1;
-//   li[0].classList.remove("act");
-//   li[1].classList.remove("act");
-//   li[2].classList.remove("act");
-//   li[3].classList.remove("act");
-//   li[4].classList.remove("act");
-//   after[0].classList.remove("after-act");
-//   after[1].classList.remove("after-act");
-//   after[2].classList.remove("after-act");
-//   after[3].classList.remove("after-act");
-//   after[4].classList.remove("after-act");
-//   li[x].classList.add("act");
-//   after[x].classList.add("after-act");
-// }
-
 var query = document.getElementsByClassName("query-asked");
 
 for (var i = 0; i < 4; i++) {
@@ -298,3 +164,18 @@ var rightbtn = document.querySelector(".right-btn");
 rightbtn.addEventListener("click", () => {
   sleft.click();
 });
+
+/**
+ * enroll now btn
+ */
+
+let enroll = document.querySelector(".enroll-now");
+const toggleenroll = () => {
+  if (window.scrollY < 550) {
+    $(".enroll-now").slideUp();
+  } else {
+    $(".enroll-now").slideDown();
+  }
+};
+window.addEventListener("load", toggleenroll);
+document.addEventListener("scroll", toggleenroll);

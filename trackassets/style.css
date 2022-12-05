@@ -46,7 +46,7 @@ body {
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 99999;
+  z-index: -999;
   width: 100%;
   height: 7rem;
   border-radius: 0;
@@ -60,7 +60,8 @@ body {
   gap: 1rem;
   background: linear-gradient(176.18deg, #800080 -2.53%, #7e267e 27.29%);
   box-shadow: rgb(0, 0, 0, 25%) 0px 4px 5px;
-  display: none;
+  cursor: pointer;
+  visibility: hidden;
 }
 /* The Modal (background) */
 .modal {
@@ -919,10 +920,11 @@ h1.gradText {
   position: relative;
   margin-left: 4rem;
 }
+
 .choose-element div {
   position: absolute;
   top: -2.5rem;
-  right: 35rem;
+  right: 34rem;
   font-weight: 700;
   font-size: 8rem;
   line-height: 12rem;
@@ -934,6 +936,12 @@ h1.gradText {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+.choose-element-1 div {
+  right: 35rem;
+}
+.choose-element-3 div {
+  right: 34.3rem;
 }
 .choose-element p {
   font-weight: 600;
@@ -1724,7 +1732,7 @@ footer a {
     margin: 2rem auto 6.7rem;
   }
   .main {
-    width: 90%;
+    width: 88%;
     padding: 0;
     border: none;
     gap: 0;
@@ -1906,7 +1914,8 @@ footer a {
 
 @media (max-width: 530px) {
   .enroll-now {
-    display: flex;
+    z-index: 99999;
+    visibility: visible;
   }
   html {
     font-size: 62.5%;
@@ -1942,12 +1951,13 @@ footer a {
   }
   .premain {
     width: 87%;
+    margin-top: 13rem;
   }
   .premain h1 {
     font-size: 4.8rem;
     font-weight: 700;
     width: 100%;
-    margin-top: 4.4rem;
+    margin-top: 2.5rem;
   }
 
   .alumni {
@@ -1978,7 +1988,13 @@ footer a {
     width: 100%;
   }
   .choose-element div {
-    right: 96%;
+    right: 94.5%;
+  }
+  .choose-element-1 div {
+    right: 97%;
+  }
+  .choose-element-3 div {
+    right: 95.5%;
   }
   .curriculum-grid {
     width: 85%;
