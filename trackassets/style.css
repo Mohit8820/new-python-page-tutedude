@@ -779,6 +779,19 @@ h1.gradText {
   margin-top: 3rem;
   margin-bottom: 7rem;
 }
+.eff-fee {
+  position: relative;
+}
+.eff-fee::after {
+  content: "₹";
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  transform: translate(-50%, -50%);
+  color: #800080;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
 /*******************/
 
 .slider-container {
@@ -1538,6 +1551,11 @@ h1.gradText {
   height: auto;
 }
 
+.query-ques {
+  position: relative;
+  width: 100%;
+}
+
 .query-ans {
   display: none;
   height: 100%;
@@ -1563,8 +1581,9 @@ h1.gradText {
   width: 5.4rem;
   height: 4rem;
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
   z-index: 1;
   border: none;
   background: transparent;
