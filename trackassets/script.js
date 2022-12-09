@@ -67,19 +67,28 @@ for (var i = 0; i < 4; i++) {
     $(".query-asked > .query-ans")
       .not($(this).children(".query-ans"))
       .fadeOut();
-    $(".query-asked > button")
-      .not($(this).children("button"))
-      .removeClass("button-border");
-    $(".query-asked > button>.minus")
-      .not($(this).children("button").children(".minus"))
+
+    // $(".query-asked > button")
+    //   .not($(this).children("button"))
+    //   .removeClass("button-border");
+    $(".query-asked >.query-ques> button>.minus")
+      .not(
+        $(this).children(".query-ques").children("button").children(".minus")
+      )
       .hide();
-    $(".query-asked > button> .plus")
-      .not($(this).children("button").children(".plus"))
+    $(".query-asked >.query-ques> button> .plus")
+      .not($(this).children(".query-ques").children("button").children(".plus"))
       .show();
     $(".query-asked").not(this).removeClass("active-query", 500);
     // $(this).children(".query-asked button").toggleClass("button-border");
-    var min = $(this).children(".query-asked button").children(".minus");
-    var plu = $(this).children(".query-asked button").children(".plus");
+    var min = $(this)
+      .children(".query-ques")
+      .children("button")
+      .children(".minus");
+    var plu = $(this)
+      .children(".query-ques")
+      .children("button")
+      .children(".plus");
     min.toggle();
     plu.toggle();
     var divToSlide = jQuery(this).children(".query-ans");
